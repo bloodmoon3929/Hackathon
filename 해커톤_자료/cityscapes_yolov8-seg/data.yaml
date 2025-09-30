@@ -1,0 +1,43 @@
+train: ../train
+val: ../val
+test: ../test
+
+nc: 35  # Number of classes in the Cityscapes dataset used for training
+
+names: [
+  'road',            # Class ID 0
+  'sidewalk',        # Class ID 1          
+  'person',          # Class ID 2
+  'car',            # Class ID 3
+  'unlabeled',
+  'ego vehicle',
+  'rectification border',
+  'out of roi',
+  'static',
+  'dynamic',
+  'ground',
+  'parking',
+  'rail track',
+  'building',
+  'wall',
+  'fence',
+  'guard rail',
+  'bridge',
+  'tunnel',
+  'pole',
+  'polegroup',
+  'traffic light',
+  'traffic sign',
+  'vegetation',
+  'terrain',
+  'sky',
+  'rider',
+  'truck',
+  'bus',
+  'caravan',
+  'trailer',
+  'train',
+  'motorcycle',
+  'bicycle',
+  'license plate'
+]
