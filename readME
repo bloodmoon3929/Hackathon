@@ -39,7 +39,7 @@
 - **자동차**: Jetson TX2  
 
 ### 시스템 구성도
-![시스템 구성도](해커톤_자료/images/노드_구조1.png)
+![시스템 구성도](해커톤_자료/첨부파일/노드_구조1.png)
 
 - 기설된 CCTV의 역할을 수행할 Intel사의 영상이 `Camera 노드`를 통해 `/camera/camera/color/image_raw` 신호로 발행됨  
 - Yolo ros의 `yolo_node`, `tracking_node`, `debug_node`는 이를 구독하여 기존 Yolo 모델의 단점인 불필요한 트래픽 문제를 해결하기 위해 LifeCycle 도입  
