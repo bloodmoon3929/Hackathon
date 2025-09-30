@@ -58,11 +58,11 @@
 ## 시스템 구축 과정
 
 사용된 기술 스택:
-- Airnet
-- Yolo ros
-- Yolov8-seg
+- [Airnet](./해커톤_자료/airnet/Airnet.md)
+- [Yolo ros](./해커톤_자료/Yolo_ros/Yolo%20ros.md)
+- [Yolov8-seg](./해커톤_자료/cityscapes_yolov8-seg/Yolov8m-seg.md)+[CityScapes](./해커톤_자료/cityscapes_yolov8-seg/cityscape.md)
 - MySQL  
-- Flask
+- [Flask](./해커톤_자료/flask/flask.md)
 
 ---
 

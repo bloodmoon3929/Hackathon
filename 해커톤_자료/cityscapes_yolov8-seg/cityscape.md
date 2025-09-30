@@ -2,8 +2,8 @@
 
 실제 구현 할때는 gtFine_trainvaltest 데이터 셋 (11giga byte)를 받아서 학습을 진행하였는데 이보다 더 큰 데이터 셋을 사용한다면 좋을 수 있음
 
-Yolov8m-seg를 통한 학습을 진행하였으나 제공된 데이터 셋은 json이였기에 txt로 변환하는 과정이 필요하였고, 이를 [[공부/캠프/해커톤/해커톤_자료/cityscapes_yolov8-seg/convert.py|convert]]
-을 통하여 txt파일로 변환하였음, 그 후 [[공부/캠프/해커톤/해커톤_자료/cityscapes_yolov8-seg/A.py|A]]와 [[공부/캠프/해커톤/해커톤_자료/cityscapes_yolov8-seg/data.yaml|data]]을 통하여 학습을 진행하였음
+[Yolov8m-seg](./Yolov8m-seg.md)를 통한 학습을 진행하였으나 제공된 데이터 셋은 json이였기에 txt로 변환하는 과정이 필요하였고, 이를 [convert.py](./convert.py)
+을 통하여 txt파일로 변환하였음, 그 후 [A.py](./A.py)와 [data.yaml](./data.yaml)을 통하여 학습을 진행하였음
 
 전체적으로 사람에 대한 데이터 셋이 적기에 학습이 부진하였음
 
@@ -32,42 +32,52 @@ Yolov8m-seg를 통한 학습을 진행하였으나 제공된 데이터 셋은 js
 # 학습 성능
 ## BOX_curve
 ### BoxF1_curve
-![[첨부파일/BoxF1_curve.png]]
+![BoxF1_curve.png](../첨부파일/BoxF1_curve.png)
 ### BoxP_curve
-![[첨부파일/BoxP_curve.png]]
+![BoxP_curve.png](../첨부파일/BoxP_curve.png)
 ### BoxPR_curve
-![[첨부파일/BoxPR_curve.png]]
+![BoxPR_curve.png](../첨부파일/BoxPR_curve.png)
 ### BOX_R_curve
-![[첨부파일/BoxR_curve.png]]
+![BoxR_curve.png](../첨부파일/BoxR_curve.png)
+
+
 ## confusion_matrix
-
 ### confusion_matrix_nomalized
-![[첨부파일/confusion_matrix_normalized.png]]
+![confusion_matrix_normalized.png](../첨부파일/confusion_matrix_normalized.png)
 ### confusion_matrix
-![[첨부파일/confusion_matrix.png]]
+![confusion_matrix.png](../첨부파일/confusion_matrix.png)
+
+
 ## labels
-![[첨부파일/labels.jpg]]
+![labels.jpg](../첨부파일/labels.jpg)
+
+
 ## Mask_curve
-
 ### MaskF1_curve
-![[첨부파일/MaskF1_curve.png]]
+![MaskF1_curve.png](../첨부파일/MaskF1_curve.png)
 ### MaskP_curve
-![[첨부파일/MaskP_curve.png]]
+![MaskP_curve.png](../첨부파일/MaskP_curve.png)
 ### MaskPR_curve
-![[첨부파일/MaskPR_curve.png]]
+![MaskPR_curve.png](../첨부파일/MaskPR_curve.png)
 ### MaskR_curve
-![[첨부파일/MaskR_curve.png]]
+![MaskR_curve.png](../첨부파일/MaskR_curve.png)
 ### Results
-![[첨부파일/results.png]]
-### train_batch
-![[첨부파일/train_batch0.jpg]]
-![[첨부파일/train_batch1.jpg]]
+![results.png](../첨부파일/results.png)
 
-![[첨부파일/train_batch2 1.jpg]]
-![[첨부파일/train_batch16740.jpg]]
-![[첨부파일/train_batch16741.jpg]]
-![[첨부파일/train_batch16742.jpg]]
+
+### train_batch
+![train_batch0.jpg](../첨부파일/train_batch0.jpg)
+![train_batch1.jpg](../첨부파일/train_batch1.jpg)
+![train_batch2 1.jpg](../첨부파일/train_batch2%201.jpg)
+![train_batch16740.jpg](../첨부파일/train_batch16740.jpg)
+![train_batch16741.jpg](../첨부파일/train_batch16741.jpg)
+![train_batch16742.jpg](../첨부파일/train_batch16742.jpg)
 
 
 ### val_batch
-![[첨부파일/val_batch0_labels.jpg]]![[첨부파일/val_batch0_pred.jpg]]![[첨부파일/val_batch1_labels.jpg]]![[첨부파일/val_batch1_pred.jpg]]![[첨부파일/val_batch2_labels.jpg]]![[첨부파일/val_batch2_pred.jpg]]
+![val_batch0_labels.jpg](../첨부파일/val_batch0_labels.jpg)
+![val_batch0_pred.jpg](../첨부파일/val_batch0_pred.jpg)
+![val_batch1_labels.jpg](../첨부파일/val_batch1_labels.jpg)
+![val_batch1_pred.jpg](../첨부파일/val_batch1_pred.jpg)
+![val_batch2_labels.jpg](../첨부파일/val_batch2_labels.jpg)
+![val_batch2_pred.jpg](../첨부파일/val_batch2_pred.jpg)
