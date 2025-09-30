@@ -42,7 +42,7 @@
 ![시스템 구성도](해커톤_자료/images/노드_구조1.png)
 
 - 기설된 CCTV의 역할을 수행할 Intel사의 영상이 `Camera 노드`를 통해 `/camera/camera/color/image_raw` 신호로 발행됨  
-- [Yolo ros](해커톤_자료/Yolo_ros/yolo_ros.md)의 `yolo_node`, `tracking_node`, `debug_node`는 이를 구독하여 기존 Yolo 모델의 단점인 불필요한 트래픽 문제를 해결하기 위해 LifeCycle 도입  
+- Yolo ros의 `yolo_node`, `tracking_node`, `debug_node`는 이를 구독하여 기존 Yolo 모델의 단점인 불필요한 트래픽 문제를 해결하기 위해 LifeCycle 도입  
 - `Yolo/detection` 노드를 통해 `person` 또는 `human` 라벨 감지 시 `/personflag`에서 true 값 반환  
 - 이후 ROS2와 ROS1 연동을 위한 `pedestrian 노드`가 통신을 수행  
 - `pedestrian_gpio_node`를 통해 Jetson Nano(CCTV 역할)나 Jetson TX2(차량)의 GPIO에 신호 전달  
@@ -53,11 +53,11 @@
 ---
 
 ## 시스템 구축 과정
-- [Airnet](해커톤_자료/airnet/Airnet.md)  
-- [Yolo ros](해커톤_자료/Yolo_ros/yolo_ros.md)  
-- [Yolov8-seg](해커톤_자료/cityscapes_yolov8-seg/Yolov8m-seg.md) + [CityScapes](해커톤_자료/cityscapes_yolov8-seg/cityscape.md)  
+- Airnet
+- Yolo ros
+- Yolov8-seg
 - MySQL  
-- [Flask](해커톤_자료/flask/flask.md)  
+- Flask
 
 ---
 
